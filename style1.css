@@ -276,63 +276,61 @@ body {
 }
 @media (max-width: 768px) {
     .header {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center items */
     }
 
     .search-container {
-        width: 100%; 
-        margin: 10px 0; 
+        width: 100%; /* Make search container full width */
+        margin: 10px 0; /* Add vertical margin */
     }
 
     .search-bar {
-        width: 90%; 
-        max-width: none; 
+        width: 90%; /* Increase width for mobile */
+        max-width: none; /* Remove max-width to use full width */
     }
 
     .nav {
-        flex-direction: column; 
-        gap: 10px; 
+        flex-direction: column; /* Stack navigation items vertically */
+        gap: 10px; /* Reduce gap between items */
     }
 
     .top-artists {
-        padding: 20px; 
+        padding: 20px; /* Adjust padding for mobile */
     }
 
     .artists-container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Stack artist cards vertically */
+        align-items: center; /* Center align cards */
     }
 
     .artist-card {
-        width: 80%; 
-        max-width: 300px; 
+        width: 80%; /* Make artist cards responsive */
+        max-width: 300px; /* Maintain a max width */
     }
 
     .about-content {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack about us content vertically */
+        align-items: center; /* Center align text and logo */
     }
 
     .founder-content {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack founder info vertically */
+        align-items: center; /* Center align text and images */
     }
 
     .collab-content {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack collaboration content vertically */
+        align-items: center; /* Center align text and images */
     }
 
     .collab-images {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack collaboration images vertically */
+        align-items: center; /* Center align images */
     }
 
     .founder-images {
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column; /* Stack founder images vertically */
+        align-items: center; /* Center align images */
     }
 }
-
-
