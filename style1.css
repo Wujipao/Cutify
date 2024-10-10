@@ -118,6 +118,10 @@ h1 span:nth-child(6){
     background-color: black;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(0 0 30px #83c57a);
+}
+.tagline h2{
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .top-artists {
@@ -146,10 +150,11 @@ h1 span:nth-child(6){
 
 .artist-card {
     background-color: #666666;
-    padding: 30px; /* Increased padding */
+    padding: 30px; 
     border-radius: 15px;
-    width: 300px; /* Increased width of each card */
+    width: 300px; 
     text-align: center;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .artist-card img {
@@ -192,6 +197,7 @@ h1 span:nth-child(6){
     font-size: 3em;
     margin-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .about-text p {
@@ -222,6 +228,7 @@ h1 span:nth-child(6){
     font-size: 3em;
     margin-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .founder-content {
@@ -265,6 +272,7 @@ h1 span:nth-child(6){
     font-size: 3em;
     margin-bottom: 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .collaboration p {
@@ -300,6 +308,7 @@ h1 span:nth-child(6){
     font-size: 4em;
     margin-top: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 @media (max-width: 768px) {
     .header {
