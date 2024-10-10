@@ -22,7 +22,7 @@ body {
 .search-container {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center the search bar */
+    justify-content: center; 
 }
 
 .search-bar {
@@ -51,36 +51,82 @@ body {
 .header .logo img.logo-image {
     width: 150px;
     margin-right: 10px;
+    animation: bounce 0.7s ease 
+    infinite;
 }
 
 .header .logo h1 {
     font-size: 5em;
     margin: 0;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
 }
 
 .green-text {
     color: #83c57a;
 }
+
 h1 span {
     display: inline-block;
     animation: bounce 0.6s ease 
     infinite;
 }
-h1 span:nth-child(2){
+.logo image.logo-imag:nth-child(1){
     animation-delay: 0.1s;
 }
-h1 span:nth-child(3){
+h1 span:nth-child(2){
     animation-delay: 0.2s;
 }
-h1 span:nth-child(4){
+h1 span:nth-child(3){
     animation-delay: 0.3s;
 }
-h1 span:nth-child(5){
+h1 span:nth-child(4){
     animation-delay: 0.4s;
 }
-h1 span:nth-child(6){
+h1 span:nth-child(5){
     animation-delay: 0.5s;
+}
+h1 span:nth-child(6){
+    animation-delay: 0.6s;
+}
+h6{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+h6 span{
+    display: inline-block;
+    animation: bounce 0.6s ease 
+    infinite;
+    color: aliceblue;
+}
+h6 span:nth-child(1){
+    animation-delay: 0.1s;
+}
+h6 span:nth-child(2){
+    animation-delay: 0.2s;
+}
+h6 span:nth-child(3){
+    animation-delay: 0.3s;
+}
+h6 span:nth-child(4){
+    animation-delay: 0.4s;
+}
+h6 span:nth-child(5){
+    animation-delay: 0.5s;
+}
+h6 span:nth-child(6){
+    animation-delay: 0.6s;
+}
+h6 span:nth-child(7){
+    animation-delay: 0.7s;
+}
+h6 span:nth-child(8){
+    animation-delay: 0.8s;
+}
+h6 span:nth-child(9){
+       animation-delay: 0.9s;
+}
+h6 span:nth-child(10){
+    animation-delay: 1.0s;
 }
 @keyframes bounce{
     0%, 100%{
@@ -90,7 +136,6 @@ h1 span:nth-child(6){
         transform: translateY(-20px);
     }
 }
-
 .nav a {
     margin: 0 15px;
     color: white;
@@ -116,12 +161,16 @@ h1 span:nth-child(6){
 .tagline {
     padding: 50px 0;
     background-color: black;
+    display: flex;
+    justify-content: center;
     font-size: 2em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     filter: drop-shadow(0 0 30px #83c57a);
 }
 .tagline h2{
     filter: drop-shadow(0 0 30px #83c57a);
+    justify-content: center;
+    text-align: center;
 }
 
 .top-artists {
@@ -131,12 +180,13 @@ h1 span:nth-child(6){
 }
 
 .top-artists h3 {
-    color: white;
+    color: rgb(95, 167, 101);
     font-size: 2em;
+    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .top-artists p {
-    color: rgb(4, 255, 67);
+    color: rgb(245, 245, 245);
     font-size: 1.2em;
     margin-bottom: 30px;
 }
@@ -150,11 +200,10 @@ h1 span:nth-child(6){
 
 .artist-card {
     background-color: #666666;
-    padding: 30px; 
+    padding: 30px;
     border-radius: 15px;
     width: 300px; 
     text-align: center;
-    filter: drop-shadow(0 0 30px #83c57a);
 }
 
 .artist-card img {
@@ -311,7 +360,14 @@ h1 span:nth-child(6){
     font-size: 4em;
     margin-top: 30px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    filter: drop-shadow(0 0 30px #83c57a);
+    filter: drop-shadow(0 0 15px #83c57a);
+}
+footer{
+    background-color: #666666;
+    text-align: center;
+    padding: 20px;
+    margin: 5px;
+    justify-content: center;
 }
 .feedback h4{
     font-size: 1.2em;
@@ -327,69 +383,80 @@ h1 span:nth-child(6){
     border-color: #83c57a;
     filter: drop-shadow(0 0 50px rgb(178, 247, 169));
     padding: 20px;
-    margin: 20px;
-    resize: none;  
+    margin: 20px auto;
+    resize: none;
+    display: block;
+}
+button {
+    background-color: #4CAF50; 
+    color: white; 
+    text-align: center; 
+    text-decoration: none; 
+    width: 100px;
+    height: 40px; 
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin: 10px auto;
+    border-radius: 12px;
+    transition: background-color 0.3s ease; 
+    display: block;
 }
 @media (max-width: 768px) {
+
+
     .header {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center items */
+        flex-direction: column;
+        text-align: center;
     }
-
-    .search-container {
-        width: 100%; /* Make search container full width */
-        margin: 10px 0; /* Add vertical margin */
+    .header .logo img.logo-image {
+        width: 100px; 
     }
-
+    .header .logo h1 {
+        font-size: 3em; 
+    }
     .search-bar {
-        width: 90%; /* Increase width for mobile */
-        max-width: none; /* Remove max-width to use full width */
+        width: 200px;
     }
-
     .nav {
-        flex-direction: column; /* Stack navigation items vertically */
-        gap: 10px; /* Reduce gap between items */
+        flex-direction: column;
+        gap: 10px;
     }
-
+    .tagline h2 {
+        font-size: 1.5em;
+    }
     .top-artists {
-        padding: 20px; /* Adjust padding for mobile */
+        padding: 20px;
     }
 
     .artists-container {
-        flex-direction: column; /* Stack artist cards vertically */
-        align-items: center; /* Center align cards */
+        flex-direction: column;
+        gap: 20px; 
     }
-
     .artist-card {
-        width: 80%; /* Make artist cards responsive */
-        max-width: 300px; /* Maintain a max width */
+        width: 100%; 
     }
-
     .about-content {
-        flex-direction: column; /* Stack about us content vertically */
-        align-items: center; /* Center align text and logo */
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-logo img {
+        width: 200px;
     }
 
     .founder-content {
-        flex-direction: column; /* Stack founder info vertically */
-        align-items: center; /* Center align text and images */
-    }
-
-    .collab-content {
-        flex-direction: column; /* Stack collaboration content vertically */
-        align-items: center; /* Center align text and images */
-    }
-
-    .collab-images {
-        flex-direction: column; /* Stack collaboration images vertically */
-        align-items: center; /* Center align images */
+        flex-direction: column;
+        gap: 30px; 
     }
 
     .founder-images {
-        flex-direction: column; /* Stack founder images vertically */
-        align-items: center; /* Center align images */
+        flex-direction: column;
     }
-    .feedback .message {
-        align-items: center;
-    } 
+    .collab-images {
+        flex-direction: column;
+        gap: 15px; 
+    }
+    
+    footer {
+        padding: 15px; 
+    }
 }
