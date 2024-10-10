@@ -212,4 +212,59 @@ audio::-webkit-media-controls-panel {
     gap: 40px;
     max-width: 1200px;
 }
+@media screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px;
+    }
 
+    .back-button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    .head .logo img.logo-image {
+        width: 100px;
+    }
+
+    .head .logo h2 {
+        font-size: 2em;
+    }
+
+    .sean, .paolo {
+        padding: 30px 10px;
+    }
+
+    .sean .sean-content, .paolo .paolo-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .sean-content .sean-photo img, .paolo-content .paolo-photo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .sean-text ul, .paolo-text ul {
+        padding: 0;
+    }
+
+    .song img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .song h3 {
+        font-size: 0.9em;
+    }
+
+    audio {
+        width: 150px;
+    }
+
+    .sean-fave, .paolo-fave {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
