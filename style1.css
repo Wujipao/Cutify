@@ -313,6 +313,23 @@ h1 span:nth-child(6){
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     filter: drop-shadow(0 0 30px #83c57a);
 }
+.feedback h4{
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    margin-top: 20px;
+}
+.feedback .message{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    border-style: double;
+    border-color: #83c57a;
+    filter: drop-shadow(0 0 50px rgb(178, 247, 169));
+    padding: 20px;
+    margin: 20px;
+    resize: none;  
+}
 @media (max-width: 768px) {
     .header {
         flex-direction: column; /* Stack elements vertically */
@@ -372,4 +389,7 @@ h1 span:nth-child(6){
         flex-direction: column; /* Stack founder images vertically */
         align-items: center; /* Center align images */
     }
+    .feedback .message {
+        align-items: center;
+    } 
 }
