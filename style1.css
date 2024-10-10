@@ -248,6 +248,9 @@ h1 span:nth-child(6){
     line-height: 1.6;
     text-align: justify;
 }
+.founder-text .biodata{
+    color: greenyellow;
+}
 
 .founder-images {
     flex: 1;
